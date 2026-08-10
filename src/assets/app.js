@@ -85,3 +85,52 @@ if (modal && inquireForm) {
     }
   });
 }
+
+// Project photo gallery
+const galleryModal = document.getElementById('galleryModal');
+if (galleryModal) {
+  const galleryImg = document.getElementById('galleryImg');
+  const galleryCount = document.getElementById('galleryCount');
+  const closeBtn = document.getElementById('galleryClose');
+  const prevBtn = document.getElementById('galleryPrev');
+  const nextBtn = document.getElementById('galleryNext');
+  let images = [];
+  let index = 0;
+  let lastFocused = null;
+
+  function show(i) {
+    index = (i + images.length) % images.length;
+    galleryImg.src = images[index].src;
+    galleryImg.alt = images[index].alt;
+    galleryCount.textContent = `${index + 1} / ${images.length}`;
+  }
+  function openGallery(e) {
+    e.preventDefault();
+    images = [...e.currentTarget.querySelectorAll('.gallery-data img')];
+    if (!images.length) return;
+    lastFocused = document.activeElement;
+    show(0);
+    galleryModal.classList.add('open');
+    galleryModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    closeBtn?.focus();
+  }
+  function closeGallery() {
+    galleryModal.classList.remove('open');
+    galleryModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
+  }
+
+  document.querySelectorAll('.js-gallery').forEach((el) => el.addEventListener('click', openGallery));
+  closeBtn?.addEventListener('click', closeGallery);
+  prevBtn?.addEventListener('click', () => show(index - 1));
+  nextBtn?.addEventListener('click', () => show(index + 1));
+  galleryModal.addEventListener('click', (e) => { if (e.target === galleryModal) closeGallery(); });
+  document.addEventListener('keydown', (e) => {
+    if (!galleryModal.classList.contains('open')) return;
+    if (e.key === 'Escape') closeGallery();
+    if (e.key === 'ArrowLeft') show(index - 1);
+    if (e.key === 'ArrowRight') show(index + 1);
+  });
+}

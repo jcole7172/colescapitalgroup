@@ -60,7 +60,11 @@ canonical: /
     <p class="sec-label">Track Record</p>
     <h2>What we've built.</h2>
     {% for p in collections.projects %}
+    {% if p.data.gallery %}
+    <a href="#" class="row rv js-gallery"><span class="yr">{{ p.data.year | yy }}</span><div class="desc"><h3>{{ p.data.title }}</h3><p>{{ p.data.note }}</p></div><span class="val">{{ p.data.category }}<small class="gallery-hint">View Photos →</small></span><span class="gallery-data" hidden>{% for img in p.data.gallery %}<img src="{{ img | imgUrl }}" alt="{{ p.data.title }}">{% endfor %}</span></a>
+    {% else %}
     <div class="row rv"><span class="yr">{{ p.data.year | yy }}</span><div class="desc"><h3>{{ p.data.title }}</h3><p>{{ p.data.note }}</p></div><span class="val">{{ p.data.category }}</span></div>
+    {% endif %}
     {% endfor %}
     <div class="managed rv">
       <p class="managed-label">Under Our Management</p>

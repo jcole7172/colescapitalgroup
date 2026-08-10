@@ -95,6 +95,10 @@
   .row .desc h3{font-size:24px;font-weight:500}
   .row .desc p{font-size:14px;color:var(--muted);margin-top:4px}
   .row .val{font-family:"Cormorant Garamond";font-size:24px;color:var(--brass-soft)}
+  a.row{text-decoration:none;color:inherit;cursor:pointer;transition:background .2s ease}
+  a.row:hover{background:rgba(255,255,255,.03)}
+  .gallery-hint{display:block;font-family:"Archivo";font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-top:6px;transition:color .2s ease}
+  a.row:hover .gallery-hint{color:var(--brass-soft)}
   .managed{margin-top:14px;padding-top:40px;border-top:1px solid var(--line);text-align:center}
   .managed-label{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
   .managed-links{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 36px}
@@ -155,6 +159,20 @@
   .form-row input:focus,.form-row textarea:focus{outline:none;border-color:var(--brass)}
   #inquireForm .btn{width:100%;margin-top:6px}
   .form-status{margin-top:14px;font-size:13px;color:var(--brass-soft);text-align:center;min-height:1.2em}
+
+  /* photo lightbox */
+  .lightbox-panel{position:relative;width:100%;max-width:min(960px,92vw);background:none;border:none;padding:0;display:flex;align-items:center;justify-content:center;transform:none}
+  .lightbox-img{max-width:100%;max-height:82vh;border:1px solid var(--line);background:var(--ink2);object-fit:contain}
+  .lightbox-count{position:absolute;bottom:-34px;left:50%;transform:translateX(-50%);font-size:12px;letter-spacing:.1em;color:var(--muted)}
+  .lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(10,11,10,.55);border:1px solid var(--line);color:var(--bone);width:44px;height:44px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s ease,color .2s ease}
+  .lightbox-nav:hover{background:var(--ink2);color:var(--brass-soft)}
+  .lightbox-prev{left:-8px}
+  .lightbox-next{right:-8px}
+  .lightbox-overlay .modal-close{top:-40px;right:-8px;color:var(--bone)}
+  @media(max-width:640px){
+    .lightbox-prev{left:4px}.lightbox-next{right:4px}
+    .lightbox-overlay .modal-close{top:6px;right:6px;background:rgba(10,11,10,.55)}
+  }
 
   .js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
   .js .rv.in{opacity:1;transform:none}

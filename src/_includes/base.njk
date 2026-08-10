@@ -124,6 +124,16 @@
   </div>
 </div>
 
+<div class="modal-overlay lightbox-overlay" id="galleryModal" aria-hidden="true">
+  <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button type="button" class="modal-close" id="galleryClose" aria-label="Close">&times;</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="galleryPrev" aria-label="Previous photo">&larr;</button>
+    <img class="lightbox-img" id="galleryImg" src="" alt="" />
+    <button type="button" class="lightbox-nav lightbox-next" id="galleryNext" aria-label="Next photo">&rarr;</button>
+    <p class="lightbox-count" id="galleryCount"></p>
+  </div>
+</div>
+
 <script type="module" src="assets/app.js"></script>
 {% if site.analyticsToken %}<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.analyticsToken }}"}'></script>{% endif %}
 </body>

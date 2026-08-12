@@ -4,5 +4,5 @@ town: Lake George, NY
 status: TBD
 soft: true
 note: Right outside the village.
-order: 6
+order: 8
 ---

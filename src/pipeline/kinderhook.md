@@ -4,5 +4,5 @@ town: Kinderhook, NY
 status: TBD
 soft: true
 note: Coming soon.
-order: 7
+order: 6
 ---

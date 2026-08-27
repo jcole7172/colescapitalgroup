@@ -1,7 +1,7 @@
 ---
 label: Hospitality
-title: Pines & Ponies Vacation Rentals
-blurb: "Coming Soon."
-image: assets/uploads/pines-and-ponies.png
+title: Coming Soon
+blurb: ""
+image: https://picsum.photos/seed/hospitality/800/600
 order: 3
 ---

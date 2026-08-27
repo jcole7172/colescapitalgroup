@@ -52,7 +52,7 @@
 
   /* stats strip */
   .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink2)}
-  .stats-in{display:grid;grid-template-columns:repeat(4,1fr)}
+  .stats-in{display:grid;grid-template-columns:repeat(3,1fr)}
   .stat{padding:46px 26px;text-align:center;border-right:1px solid var(--line)}
   .stat:last-child{border-right:none}
   .stat b{display:block;font-family:"Cormorant Garamond";font-size:54px;color:var(--brass-soft);font-weight:500;line-height:1}

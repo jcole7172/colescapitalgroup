@@ -3,4 +3,50 @@ title: Commercial New Construction
 year: 2025
 category: Commercial
 note: 10,000 sq. ft. warehouse.
+gallery:
+  - assets/uploads/1917-warehouse/warehouse-01.jpg
+  - assets/uploads/1917-warehouse/warehouse-02.jpg
+  - assets/uploads/1917-warehouse/warehouse-03.jpg
+  - assets/uploads/1917-warehouse/warehouse-04.jpg
+  - assets/uploads/1917-warehouse/warehouse-05.jpg
+  - assets/uploads/1917-warehouse/warehouse-06.jpg
+  - assets/uploads/1917-warehouse/warehouse-07.jpg
+  - assets/uploads/1917-warehouse/warehouse-08.jpg
+  - assets/uploads/1917-warehouse/warehouse-09.jpg
+  - assets/uploads/1917-warehouse/warehouse-10.jpg
+  - assets/uploads/1917-warehouse/warehouse-11.jpg
+  - assets/uploads/1917-warehouse/warehouse-12.jpg
+  - assets/uploads/1917-warehouse/warehouse-13.jpg
+  - assets/uploads/1917-warehouse/warehouse-14.jpg
+  - assets/uploads/1917-warehouse/warehouse-15.jpg
+  - assets/uploads/1917-warehouse/warehouse-16.jpg
+  - assets/uploads/1917-warehouse/warehouse-17.jpg
+  - assets/uploads/1917-warehouse/warehouse-18.jpg
+  - assets/uploads/1917-warehouse/warehouse-19.jpg
+  - assets/uploads/1917-warehouse/warehouse-20.jpg
+  - assets/uploads/1917-warehouse/warehouse-21.jpg
+  - assets/uploads/1917-warehouse/warehouse-22.jpg
+  - assets/uploads/1917-warehouse/warehouse-23.jpg
+  - assets/uploads/1917-warehouse/warehouse-24.jpg
+  - assets/uploads/1917-warehouse/warehouse-25.jpg
+  - assets/uploads/1917-warehouse/warehouse-26.jpg
+  - assets/uploads/1917-warehouse/warehouse-27.jpg
+  - assets/uploads/1917-warehouse/warehouse-28.jpg
+  - assets/uploads/1917-warehouse/warehouse-29.jpg
+  - assets/uploads/1917-warehouse/warehouse-30.jpg
+  - assets/uploads/1917-warehouse/warehouse-31.jpg
+  - assets/uploads/1917-warehouse/warehouse-32.jpg
+  - assets/uploads/1917-warehouse/warehouse-33.jpg
+  - assets/uploads/1917-warehouse/warehouse-34.jpg
+  - assets/uploads/1917-warehouse/warehouse-35.jpg
+  - assets/uploads/1917-warehouse/warehouse-36.jpg
+  - assets/uploads/1917-warehouse/warehouse-37.jpg
+  - assets/uploads/1917-warehouse/warehouse-38.jpg
+  - assets/uploads/1917-warehouse/warehouse-39.jpg
+  - assets/uploads/1917-warehouse/warehouse-40.jpg
+  - assets/uploads/1917-warehouse/warehouse-41.jpg
+  - assets/uploads/1917-warehouse/warehouse-42.jpg
+  - assets/uploads/1917-warehouse/warehouse-43.jpg
+  - assets/uploads/1917-warehouse/warehouse-44.jpg
+  - assets/uploads/1917-warehouse/warehouse-45.jpg
 ---

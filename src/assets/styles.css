@@ -179,7 +179,6 @@
 
   @media(max-width:900px){
     .who{grid-template-columns:1fr;gap:36px}.who-img{height:380px;order:-1}
-    .stats-in{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:none}
     .pf-grid{grid-template-columns:1fr}
     .foot{grid-template-columns:1fr 1fr}
   }

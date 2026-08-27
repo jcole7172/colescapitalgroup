@@ -180,6 +180,8 @@
   @media(max-width:900px){
     .who{grid-template-columns:1fr;gap:36px}.who-img{height:380px;order:-1}
     .pf-grid{grid-template-columns:1fr}
+    .up-grid{grid-template-columns:1fr}
+    .press-grid{grid-template-columns:1fr}
     .foot{grid-template-columns:1fr 1fr}
   }
   @media(max-width:1080px){

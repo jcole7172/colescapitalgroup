@@ -1,5 +1,5 @@
 ---
-title: 10,000 sq. ft. Metal Building — New Location for Honest Johnny's and Precision Automotive Calibrations
+title: 10,000 sq. ft. Metal Building Development — New Location for Honest Johnny's and Precision Automotive Calibrations
 town: Colonie, NY
 status: Summer 2027
 soft: false

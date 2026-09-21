@@ -1,5 +1,5 @@
 ---
-title: Residential Development
+title: Residential
 town: Saratoga Springs, NY
 status: Summer 2027
 soft: false

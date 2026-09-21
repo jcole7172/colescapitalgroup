@@ -1,6 +1,6 @@
 ---
-title: Halfmoon Commercial Renovation
+title: Halfmoon Warehouse Commercial Renovation
 year: 2023
 category: Commercial
-note: 7,000 sq. ft. full renovation.
+note: 7,000 sq. ft. cabin full renovation, Precision Automotive Calibrations headquarters.
 ---

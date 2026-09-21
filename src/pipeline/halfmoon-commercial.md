@@ -1,5 +1,5 @@
 ---
-title: Commercial Development
+title: 20,000 sq. ft. Flex Warehouse Development
 town: Halfmoon, NY
 status: Fall 2026
 soft: false

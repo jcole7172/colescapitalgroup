@@ -1,5 +1,5 @@
 ---
-title: East Glenville Residential Renovation
+title: East Glenville Duplex Residential Renovation
 year: 2024
 category: Residential
 note: 3,800 sq. ft. two-unit renovation — kitchens, baths, and living spaces.

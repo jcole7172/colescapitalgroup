@@ -1,5 +1,5 @@
 ---
-title: Commercial
+title: ""
 town: Colonie, NY
 status: Summer 2027
 soft: false

@@ -1,5 +1,5 @@
 ---
-title: Commercial Development
+title: Commercial — 40,000 sq. ft. Flex Warehouse Development
 town: Malta, NY
 status: Fall 2027
 soft: false

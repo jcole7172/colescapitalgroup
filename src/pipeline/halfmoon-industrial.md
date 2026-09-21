@@ -1,6 +1,6 @@
 ---
 title: Industrial Park
-town: Halfmoon, NY
+town: Halfmoon, NY-Commercial
 status: TBD
 soft: true
 note: On Route 9.

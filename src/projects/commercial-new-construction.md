@@ -1,8 +1,8 @@
 ---
-title: Commercial New Construction
+title: Halfmoon Commercial New Construction
 year: 2025
 category: Commercial
-note: 10,000 sq. ft. warehouse.
+note: 10,000 sq. ft. cabin flex warehouse, home of Honest Johnny's Mechanical.
 gallery:
   - assets/uploads/1917-warehouse/warehouse-01.jpg
   - assets/uploads/1917-warehouse/warehouse-02.jpg

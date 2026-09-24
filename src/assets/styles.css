@@ -139,6 +139,7 @@
   .foot{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:44px;padding-bottom:42px;border-bottom:1px solid var(--line)}
   .foot .brand{margin-bottom:16px}
   .foot p{font-size:14px;color:var(--muted);max-width:38ch}
+  .foot-bbb{display:block;width:180px;height:auto;margin-top:20px;border-radius:6px}
   .foot h5{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin-bottom:16px;font-weight:600}
   .foot a{display:block;font-size:14px;color:var(--bone-dim);margin-bottom:10px}
   .foot a:hover{color:var(--brass-soft)}

@@ -17,7 +17,10 @@ canonical: /
 
 <section class="stats" style="padding:0">
   <div class="wrap stats-in">
-    {% for s in collections.stats %}<div class="stat rv"><b>{{ s.data.value }}</b><span>{{ s.data.label }}</span></div>{% endfor %}
+    {% for s in collections.stats %}{% if loop.index <= 3 %}<div class="stat rv"><b>{{ s.data.value }}</b><span>{{ s.data.label }}</span></div>{% endif %}{% endfor %}
+  </div>
+  <div class="wrap stats-in stats-in-2">
+    {% for s in collections.stats %}{% if loop.index > 3 %}<div class="stat rv"><b>{{ s.data.value }}</b><span>{{ s.data.label }}</span></div>{% endif %}{% endfor %}
   </div>
 </section>
 

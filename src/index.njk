@@ -83,7 +83,11 @@ canonical: /
     <h2 class="rv" style="font-size:clamp(32px,4.2vw,54px);font-weight:400">What we're building next.</h2>
     <div class="up-grid">
       {% for p in collections.pipeline %}
+      {% if p.data.gallery %}
+      <a href="#" class="up rv js-gallery"><span class="status{% if p.data.soft %} soft{% endif %}">{{ p.data.status }}</span><h3>{{ p.data.town }}</h3><p class="kind">{{ p.data.title }}</p><small class="gallery-hint">View Photos →</small><span class="gallery-data" hidden>{% for img in p.data.gallery %}<img src="{{ img | imgUrl }}" alt="{{ p.data.town }}">{% endfor %}</span></a>
+      {% else %}
       <div class="up rv"><span class="status{% if p.data.soft %} soft{% endif %}">{{ p.data.status }}</span><h3>{{ p.data.town }}</h3><p class="kind">{{ p.data.title }}</p></div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>

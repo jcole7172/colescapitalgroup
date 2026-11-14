@@ -114,6 +114,9 @@
   .up h3{font-size:27px;font-weight:500;line-height:1.1}
   .up .kind{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:6px 0 12px}
   .up p{font-size:14.5px;color:var(--bone-dim)}
+  a.up{display:block;text-decoration:none;color:inherit;cursor:pointer;transition:background .2s ease}
+  a.up:hover{background:rgba(255,255,255,.03)}
+  a.up .gallery-hint{margin-top:4px}
 
   /* press */
   .press .sec-label{text-align:center}

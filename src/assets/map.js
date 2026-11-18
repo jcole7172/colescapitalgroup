@@ -67,9 +67,14 @@ if (mapEl && window.L) {
       .bindPopup(`<strong>${loc.name}</strong><br>${loc.note}`);
   }
 
+  // "Completed" means a site Cole's Capital Group actually developed, regardless of pin color.
+  function matchesCat(loc, cat) {
+    return cat === 'completed' ? !!loc.developed : loc.cat === cat;
+  }
+
   function renderMarkers(filterCat) {
     clusters.clearLayers();
-    const filtered = filterCat ? locations.filter((loc) => loc.cat === filterCat) : locations;
+    const filtered = filterCat ? locations.filter((loc) => matchesCat(loc, filterCat)) : locations;
     filtered.forEach((loc) => clusters.addLayer(buildMarker(loc)));
     map.fitBounds(L.latLngBounds(filtered.map((loc) => [loc.lat, loc.lng])), { padding: [30, 30] });
   }
@@ -78,7 +83,10 @@ if (mapEl && window.L) {
   renderMarkers(null);
 
   const counts = {};
-  locations.forEach((loc) => { counts[loc.cat] = (counts[loc.cat] || 0) + 1; });
+  locations.forEach((loc) => {
+    if (loc.cat !== 'completed') counts[loc.cat] = (counts[loc.cat] || 0) + 1;
+    if (loc.developed) counts.completed = (counts.completed || 0) + 1;
+  });
   const legendItems = document.querySelectorAll('.map-legend [data-cat]');
   legendItems.forEach((el) => {
     const cat = el.getAttribute('data-cat');

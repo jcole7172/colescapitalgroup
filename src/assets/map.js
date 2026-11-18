@@ -13,7 +13,7 @@ if (mapEl && window.L) {
     { name: 'East Glenville, NY', lat: 42.8780, lng: -73.9700, cat: 'completed', note: 'Duplex residential renovation — completed 2024.' },
     { name: 'Kinderhook, NY', lat: 42.4053, lng: -73.6947, cat: 'pipeline', note: 'New building replacing the current Cole\'s Collision location — 2532 Route 9H. In the pipeline.' },
     { name: 'Halfmoon, NY', lat: 42.85518420176062, lng: -73.75713111006306, cat: 'pipeline', note: "16,000 sq. ft. flex warehouse for lease — 1615 Route 9, across from the existing Cole's Collision. In the pipeline." },
-    { name: 'Halfmoon, NY', lat: 42.8600, lng: -73.6960, cat: 'pipeline', note: '72-acre industrial park — 1867 Route 9. Large-scale development, in the pipeline.' },
+    { name: 'Halfmoon, NY', lat: 42.893713494069054, lng: -73.7712579247414, cat: 'pipeline', note: '72-acre industrial park — 1867 Route 9. Large-scale development, in the pipeline.' },
     { name: 'Wilton, NY', lat: 43.1163484225072, lng: -73.77081451237201, cat: 'collision', note: "Cole's Collision — 601 Maple Avenue, Saratoga Springs, NY 12866. Current location, under management." },
     { name: 'Ballston Spa, NY', lat: 43.013346472195245, lng: -73.84645038252505, cat: 'collision', note: "Cole's Collision — 2026 Doubleday Avenue, Ballston Spa, NY 12020. Current location; will become a Honest Johnny's once the new Collision building at 2110 Doubleday Avenue is complete." },
     { name: 'Clifton Park, NY', lat: 42.854966324889084, lng: -73.75938806437404, cat: 'collision', note: "Cole's Collision — 1624 Halfmoon Parkway, Clifton Park, NY 12065. Current location, under management." },

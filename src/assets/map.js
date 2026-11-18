@@ -40,6 +40,7 @@ if (mapEl && window.L) {
     maxClusterRadius: 40,
     spiderfyOnMaxZoom: true,
     disableClusteringAtZoom: 15,
+    spiderLegPolylineOptions: { weight: 2.5, color: '#dba766', opacity: 0.9 },
     iconCreateFunction: function (cluster) {
       const children = cluster.getAllChildMarkers();
       const count = children.length;

@@ -6,6 +6,7 @@
     --bone-dim:#cbc0a4;
     --brass:#c6863c;
     --brass-soft:#dba766;
+    --rust:#d9531e;
     --line:rgba(198,134,60,.24);
     --muted:#9a9488;
   }
@@ -127,6 +128,7 @@
   .map-marker-completed span{background:var(--bone-dim)}
   .map-marker-land span{background:var(--brass-soft)}
   .map-marker-multi span{width:18px;height:18px;background:var(--brass);box-shadow:0 0 0 1px var(--line),0 0 0 3px var(--brass-soft)}
+  .map-marker-collision span{background:var(--rust)}
   .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--ink2);color:var(--bone);border:1px solid var(--line);border-radius:0}
   .leaflet-popup-content{font-family:"Archivo";font-size:13.5px;margin:12px 14px}
   .leaflet-popup-content strong{color:var(--brass-soft);font-size:15px}
@@ -141,6 +143,7 @@
   .map-legend .dot.pin-completed{background:var(--bone-dim)}
   .map-legend .dot.pin-land{background:var(--brass-soft)}
   .map-legend .dot.pin-multi{background:var(--brass);box-shadow:0 0 0 2px var(--brass-soft)}
+  .map-legend .dot.pin-collision{background:var(--rust)}
 
   /* press */
   .press .sec-label{text-align:center}

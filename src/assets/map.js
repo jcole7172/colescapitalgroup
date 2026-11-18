@@ -19,7 +19,7 @@ if (mapEl && window.L) {
     { name: 'Clifton Park, NY', lat: 42.854966324889084, lng: -73.75938806437404, cat: 'collision', note: "Cole's Collision — 1624 Halfmoon Parkway, Clifton Park, NY 12065. Current location, under management." },
     { name: 'Colonie, NY', lat: 42.713439065049265, lng: -73.82717464405481, cat: 'collision', note: "Cole's Collision — 1517 Central Avenue, Colonie, NY 12205. Current location, under management." },
     { name: 'North Greenbush, NY', lat: 42.69075914101523, lng: -73.68671213084126, cat: 'collision', note: "Cole's Collision — 97 North Greenbush Road, Troy, NY 12180. Current location, under management." },
-    { name: 'Nassau, NY', lat: 42.5230, lng: -73.6050, cat: 'collision', note: "Cole's Collision — 3592 US Highway 20, Nassau, NY 12123. Current location, under management." },
+    { name: 'Nassau, NY', lat: 42.51939494527177, lng: -73.624938621047, cat: 'collision', note: "Cole's Collision — 3592 US Highway 20, Nassau, NY 12123. Current location, under management." },
     { name: 'Kinderhook, NY', lat: 42.377378515874085, lng: -73.69123436998142, cat: 'collision', note: "Cole's Collision — 2532 Route 9H, Kinderhook, NY 12106. Current location; being replaced on-site by a new building." },
   ];
 

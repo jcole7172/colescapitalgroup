@@ -37,21 +37,34 @@ canonical: /
   </div>
 </section>
 
-<section class="portfolio" id="portfolio">
+<section class="footprint" id="footprint">
   <div class="wrap">
-    <div class="pf-head rv">
-      <div>
-        <p class="sec-label">The Portfolio</p>
-        <h2>Four classes. One standard.</h2>
+    <p class="sec-label rv">Our Footprint</p>
+    <h2 class="rv">Where we build.</h2>
+    <p class="lede rv">Active sites across New York's Capital Region.</p>
+    <div class="map-wrap rv">
+      <div id="footprint-map" role="img" aria-label="Map of Cole's Capital Group sites across the Capital Region"></div>
+      <div class="map-legend rv">
+        <span data-cat="pipeline" role="button" tabindex="0"><i class="dot pin-pipeline"></i><span class="legend-label">In the Pipeline</span></span>
+        <span data-cat="completed" role="button" tabindex="0"><i class="dot pin-completed"></i><span class="legend-label">Completed</span></span>
+        <span data-cat="land" role="button" tabindex="0"><i class="dot pin-land"></i><span class="legend-label">Land Opportunity</span></span>
+        <span data-cat="collision" role="button" tabindex="0"><i class="dot pin-collision"></i><span class="legend-label">Cole's Collision</span></span>
+        <span data-cat="red" role="button" tabindex="0"><i class="dot pin-red"></i><span class="legend-label">Honest Johnny's / Precision Automotive</span></span>
       </div>
-      <a href="#contact" class="btn js-inquire">Inquire</a>
     </div>
-    <div class="pf-grid">
-      {% for p in collections.portfolio %}
-      {% if p.data.link %}
-      <a class="pf rv" href="{{ p.data.link }}" target="_blank" rel="noopener"><div class="bg" style="background-image:url('{{ p.data.image | imgUrl }}')"></div><div class="cap"><small>{{ p.data.label }}</small><h3>{{ p.data.title }}</h3><p>{{ p.data.blurb }}</p></div></a>
+  </div>
+</section>
+
+<section class="upcoming" id="upcoming">
+  <div class="wrap">
+    <p class="sec-label rv">In the Pipeline</p>
+    <h2 class="rv" style="font-size:clamp(32px,4.2vw,54px);font-weight:400">What we're building next.</h2>
+    <div class="up-grid">
+      {% for p in collections.pipeline %}
+      {% if p.data.gallery %}
+      <a href="#" class="up rv js-gallery"><span class="status{% if p.data.soft %} soft{% endif %}">{{ p.data.status }}</span><h3>{{ p.data.town }}</h3><p class="kind">{{ p.data.title }}</p><small class="gallery-hint">View Photos →</small><span class="gallery-data" hidden>{% for img in p.data.gallery %}<img src="{{ img | imgUrl }}" alt="{{ p.data.town }}">{% endfor %}</span></a>
       {% else %}
-      <div class="pf rv"><div class="bg" style="background-image:url('{{ p.data.image | imgUrl }}')"></div><div class="cap"><small>{{ p.data.label }}</small><h3>{{ p.data.title }}</h3><p>{{ p.data.blurb }}</p></div></div>
+      <div class="up rv"><span class="status{% if p.data.soft %} soft{% endif %}">{{ p.data.status }}</span><h3>{{ p.data.town }}</h3><p class="kind">{{ p.data.title }}</p></div>
       {% endif %}
       {% endfor %}
     </div>
@@ -80,36 +93,23 @@ canonical: /
   </div>
 </section>
 
-<section class="upcoming" id="upcoming">
+<section class="portfolio" id="portfolio">
   <div class="wrap">
-    <p class="sec-label rv">In the Pipeline</p>
-    <h2 class="rv" style="font-size:clamp(32px,4.2vw,54px);font-weight:400">What we're building next.</h2>
-    <div class="up-grid">
-      {% for p in collections.pipeline %}
-      {% if p.data.gallery %}
-      <a href="#" class="up rv js-gallery"><span class="status{% if p.data.soft %} soft{% endif %}">{{ p.data.status }}</span><h3>{{ p.data.town }}</h3><p class="kind">{{ p.data.title }}</p><small class="gallery-hint">View Photos →</small><span class="gallery-data" hidden>{% for img in p.data.gallery %}<img src="{{ img | imgUrl }}" alt="{{ p.data.town }}">{% endfor %}</span></a>
+    <div class="pf-head rv">
+      <div>
+        <p class="sec-label">The Portfolio</p>
+        <h2>Four classes. One standard.</h2>
+      </div>
+      <a href="#contact" class="btn js-inquire">Inquire</a>
+    </div>
+    <div class="pf-grid">
+      {% for p in collections.portfolio %}
+      {% if p.data.link %}
+      <a class="pf rv" href="{{ p.data.link }}" target="_blank" rel="noopener"><div class="bg" style="background-image:url('{{ p.data.image | imgUrl }}')"></div><div class="cap"><small>{{ p.data.label }}</small><h3>{{ p.data.title }}</h3><p>{{ p.data.blurb }}</p></div></a>
       {% else %}
-      <div class="up rv"><span class="status{% if p.data.soft %} soft{% endif %}">{{ p.data.status }}</span><h3>{{ p.data.town }}</h3><p class="kind">{{ p.data.title }}</p></div>
+      <div class="pf rv"><div class="bg" style="background-image:url('{{ p.data.image | imgUrl }}')"></div><div class="cap"><small>{{ p.data.label }}</small><h3>{{ p.data.title }}</h3><p>{{ p.data.blurb }}</p></div></div>
       {% endif %}
       {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="footprint" id="footprint">
-  <div class="wrap">
-    <p class="sec-label rv">Our Footprint</p>
-    <h2 class="rv">Where we build.</h2>
-    <p class="lede rv">Active sites across New York's Capital Region.</p>
-    <div class="map-wrap rv">
-      <div id="footprint-map" role="img" aria-label="Map of Cole's Capital Group sites across the Capital Region"></div>
-      <div class="map-legend rv">
-        <span data-cat="pipeline" role="button" tabindex="0"><i class="dot pin-pipeline"></i><span class="legend-label">In the Pipeline</span></span>
-        <span data-cat="completed" role="button" tabindex="0"><i class="dot pin-completed"></i><span class="legend-label">Completed</span></span>
-        <span data-cat="land" role="button" tabindex="0"><i class="dot pin-land"></i><span class="legend-label">Land Opportunity</span></span>
-        <span data-cat="collision" role="button" tabindex="0"><i class="dot pin-collision"></i><span class="legend-label">Cole's Collision</span></span>
-        <span data-cat="red" role="button" tabindex="0"><i class="dot pin-red"></i><span class="legend-label">Honest Johnny's / Precision Automotive</span></span>
-      </div>
     </div>
   </div>
 </section>

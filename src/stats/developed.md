@@ -1,5 +1,5 @@
 ---
 value: "$1.4M"
 label: Developed to Date
-order: 1
+order: 3
 ---

@@ -1,5 +1,5 @@
 ---
 value: "$22M+"
 label: Under Management
-order: 2
+order: 4
 ---

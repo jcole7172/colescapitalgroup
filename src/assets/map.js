@@ -5,7 +5,7 @@ if (mapEl && window.L) {
     { name: 'Queensbury, NY', lat: 43.3150, lng: -73.6850, cat: 'pipeline', note: "New Cole's Collision location — 919 Route 9. In the pipeline." },
     { name: 'Saratoga Springs, NY', lat: 43.0745, lng: -73.7765, cat: 'pipeline', note: 'Chalet development — 25 Hudson Avenue. In the pipeline.' },
     { name: 'Malta, NY', lat: 43.0150, lng: -73.7950, cat: 'pipeline', note: '40,000 sq. ft. flex warehouse — 2377 Route 9. In the pipeline.' },
-    { name: 'Ballston Spa, NY', lat: 43.0035, lng: -73.8360, cat: 'pipeline', note: "New Cole's Collision location — 2110 Doubleday Avenue. In the pipeline." },
+    { name: 'Ballston Spa, NY', lat: 43.01720901853004, lng: -73.8434839748752, cat: 'pipeline', note: "New Cole's Collision location — 2110 Doubleday Avenue. In the pipeline." },
     { name: 'Halfmoon, NY', lat: 42.90292120039764, lng: -73.77335014573424, cat: 'multi', note: "1917 Route 9 — Honest Johnny's Mechanical, completed earlier this year." },
     { name: 'Halfmoon, NY', lat: 42.90257943632355, lng: -73.77317565777984, cat: 'multi', note: '1917 Route 9 — Precision Automotive Calibrations, completed earlier this year.' },
     { name: 'Waterford, NY', lat: 42.7850, lng: -73.6900, cat: 'land', note: 'Land opportunities — available for lease, sale, or build-to-suit.' },

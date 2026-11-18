@@ -11,7 +11,7 @@ if (mapEl && window.L) {
     { name: 'Waterford, NY', lat: 42.7850, lng: -73.6900, cat: 'land', note: 'Land opportunities — available for lease, sale, or build-to-suit.' },
     { name: 'Colonie, NY', lat: 42.71373047474535, lng: -73.82781149621879, cat: 'pipeline', note: "10,000 sq. ft. new build for Honest Johnny's and Precision Automotive Calibrations — 1529 Central Avenue, next to the existing Cole's Collision. In the pipeline." },
     { name: 'East Glenville, NY', lat: 42.8780, lng: -73.9700, cat: 'completed', note: 'Duplex residential renovation — completed 2024.' },
-    { name: 'Kinderhook, NY', lat: 42.4053, lng: -73.6947, cat: 'pipeline', note: 'New building replacing the current Cole\'s Collision location — 2532 Route 9H. In the pipeline.' },
+    { name: 'Kinderhook, NY', lat: 42.377428515874085, lng: -73.69118436998142, cat: 'pipeline', note: 'New building replacing the current Cole\'s Collision location — 2532 Route 9H. In the pipeline.' },
     { name: 'Halfmoon, NY', lat: 42.85518420176062, lng: -73.75713111006306, cat: 'pipeline', note: "16,000 sq. ft. flex warehouse for lease — 1615 Route 9, across from the existing Cole's Collision. In the pipeline." },
     { name: 'Halfmoon, NY', lat: 42.893713494069054, lng: -73.7712579247414, cat: 'pipeline', note: '72-acre industrial park — 1867 Route 9. Large-scale development, in the pipeline.' },
     { name: 'Wilton, NY', lat: 43.1163484225072, lng: -73.77081451237201, cat: 'collision', note: "Cole's Collision — 601 Maple Avenue, Saratoga Springs, NY 12866. Current location, under management." },
@@ -20,7 +20,7 @@ if (mapEl && window.L) {
     { name: 'Colonie, NY', lat: 42.713439065049265, lng: -73.82717464405481, cat: 'collision', note: "Cole's Collision — 1517 Central Avenue, Colonie, NY 12205. Current location, under management." },
     { name: 'North Greenbush, NY', lat: 42.6950, lng: -73.6550, cat: 'collision', note: "Cole's Collision — 97 North Greenbush Road, Troy, NY 12180. Current location, under management." },
     { name: 'Nassau, NY', lat: 42.5230, lng: -73.6050, cat: 'collision', note: "Cole's Collision — 3592 US Highway 20, Nassau, NY 12123. Current location, under management." },
-    { name: 'Kinderhook, NY', lat: 42.4050, lng: -73.6950, cat: 'collision', note: "Cole's Collision — 2532 Route 9H, Kinderhook, NY 12106. Current location; being replaced on-site by a new building." },
+    { name: 'Kinderhook, NY', lat: 42.377378515874085, lng: -73.69123436998142, cat: 'collision', note: "Cole's Collision — 2532 Route 9H, Kinderhook, NY 12106. Current location; being replaced on-site by a new building." },
   ];
 
   const map = L.map(mapEl, { scrollWheelZoom: false });

@@ -7,6 +7,7 @@
     --brass:#c6863c;
     --brass-soft:#dba766;
     --rust:#d9531e;
+    --red:#e23636;
     --line:rgba(198,134,60,.24);
     --muted:#9a9488;
   }
@@ -127,8 +128,10 @@
   .map-marker span{display:block;width:14px;height:14px;border-radius:50%;background:var(--brass);border:2px solid var(--ink2);box-shadow:0 0 0 1px var(--line)}
   .map-marker-completed span{background:var(--bone-dim)}
   .map-marker-land span{background:var(--brass-soft)}
-  .map-marker-multi span{width:18px;height:18px;background:var(--brass);box-shadow:0 0 0 1px var(--line),0 0 0 3px var(--brass-soft)}
   .map-marker-collision span{background:var(--rust)}
+  .map-marker-red span{background:var(--red)}
+  @keyframes pin-flash{0%,100%{box-shadow:0 0 0 1px var(--line)}50%{box-shadow:0 0 0 5px rgba(255,255,255,.85)}}
+  .map-marker-developed span{animation:pin-flash 1.8s ease-in-out infinite}
   .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--ink2);color:var(--bone);border:1px solid var(--line);border-radius:0}
   .leaflet-popup-content{font-family:"Archivo";font-size:13.5px;margin:12px 14px}
   .leaflet-popup-content strong{color:var(--brass-soft);font-size:15px}
@@ -142,8 +145,11 @@
   .map-legend .dot{width:10px;height:10px;border-radius:50%;background:var(--brass);display:inline-block}
   .map-legend .dot.pin-completed{background:var(--bone-dim)}
   .map-legend .dot.pin-land{background:var(--brass-soft)}
-  .map-legend .dot.pin-multi{background:var(--brass);box-shadow:0 0 0 2px var(--brass-soft)}
   .map-legend .dot.pin-collision{background:var(--rust)}
+  .map-legend .dot.pin-red{background:var(--red)}
+  .marker-cluster{background-clip:padding-box;border-radius:20px;background:rgba(198,134,60,.3)}
+  .marker-cluster div{width:30px;height:30px;margin:5px;text-align:center;border-radius:15px;background:var(--brass);color:var(--ink);font-family:"Archivo",sans-serif;font-weight:700}
+  .marker-cluster span{line-height:30px}
 
   /* press */
   .press .sec-label{text-align:center}

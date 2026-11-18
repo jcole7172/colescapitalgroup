@@ -6,11 +6,11 @@ if (mapEl && window.L) {
     { name: 'Saratoga Springs, NY', lat: 43.10263923258961, lng: -73.77076739592839, cat: 'pipeline', note: 'Chalet development — 25 Hudson Avenue. In the pipeline.' },
     { name: 'Malta, NY', lat: 42.95870483989021, lng: -73.78986036636094, cat: 'pipeline', note: '40,000 sq. ft. flex warehouse — 2377 Route 9. In the pipeline.' },
     { name: 'Ballston Spa, NY', lat: 43.01720901853004, lng: -73.8434839748752, cat: 'pipeline', note: "New Cole's Collision location — 2110 Doubleday Avenue. In the pipeline." },
-    { name: 'Halfmoon, NY', lat: 42.90292120039764, lng: -73.77335014573424, cat: 'multi', note: "1917 Route 9 — Honest Johnny's Mechanical, completed earlier this year." },
-    { name: 'Halfmoon, NY', lat: 42.90257943632355, lng: -73.77317565777984, cat: 'multi', note: '1917 Route 9 — Precision Automotive Calibrations, completed earlier this year.' },
+    { name: 'Halfmoon, NY', lat: 42.90292120039764, lng: -73.77335014573424, cat: 'red', developed: true, note: "1917 Route 9 — Honest Johnny's Mechanical. Completed." },
+    { name: 'Halfmoon, NY', lat: 42.90257943632355, lng: -73.77317565777984, cat: 'red', developed: true, note: '1917 Route 9 — Precision Automotive Calibrations. Completed.' },
     { name: 'Waterford, NY', lat: 42.83556572977491, lng: -73.67314899050866, cat: 'land', note: '570 Hudson River Road — land opportunity, available for lease, sale, or build-to-suit.' },
-    { name: 'Colonie, NY', lat: 42.71373047474535, lng: -73.82781149621879, cat: 'pipeline', note: "10,000 sq. ft. new build for Honest Johnny's and Precision Automotive Calibrations — 1529 Central Avenue, next to the existing Cole's Collision. In the pipeline." },
-    { name: 'East Glenville, NY', lat: 42.86839998538814, lng: -73.90681556405823, cat: 'completed', note: 'Duplex residential renovation — completed 2024.' },
+    { name: 'Colonie, NY', lat: 42.71373047474535, lng: -73.82781149621879, cat: 'red', note: "10,000 sq. ft. new build for Honest Johnny's and Precision Automotive Calibrations — 1529 Central Avenue, next to the existing Cole's Collision. In the pipeline." },
+    { name: 'East Glenville, NY', lat: 42.86839998538814, lng: -73.90681556405823, cat: 'completed', developed: true, note: 'Duplex residential renovation — completed 2024.' },
     { name: 'Kinderhook, NY', lat: 42.377428515874085, lng: -73.69118436998142, cat: 'pipeline', note: 'New building replacing the current Cole\'s Collision location — 2532 Route 9H. In the pipeline.' },
     { name: 'Halfmoon, NY', lat: 42.85518420176062, lng: -73.75713111006306, cat: 'pipeline', note: "16,000 sq. ft. flex warehouse for lease — 1615 Route 9, across from the existing Cole's Collision. In the pipeline." },
     { name: 'Halfmoon, NY', lat: 42.893713494069054, lng: -73.7712579247414, cat: 'pipeline', note: '72-acre industrial park — 1867 Route 9. Large-scale development, in the pipeline.' },
@@ -34,17 +34,25 @@ if (mapEl && window.L) {
     maxZoom: 19,
   }).addTo(map);
 
+  const clusters = L.markerClusterGroup({
+    maxClusterRadius: 40,
+    spiderfyOnMaxZoom: true,
+    disableClusteringAtZoom: 15,
+  });
+
   locations.forEach((loc) => {
+    const className = 'map-marker map-marker-' + loc.cat + (loc.developed ? ' map-marker-developed' : '');
     const icon = L.divIcon({
-      className: 'map-marker map-marker-' + loc.cat,
+      className,
       html: '<span></span>',
       iconSize: [18, 18],
       iconAnchor: [9, 9],
     });
     L.marker([loc.lat, loc.lng], { icon, alt: loc.name })
-      .addTo(map)
-      .bindPopup(`<strong>${loc.name}</strong><br>${loc.note}`);
+      .bindPopup(`<strong>${loc.name}</strong><br>${loc.note}`)
+      .addTo(clusters);
   });
 
+  map.addLayer(clusters);
   map.fitBounds(L.latLngBounds(locations.map((loc) => [loc.lat, loc.lng])), { padding: [30, 30] });
 }

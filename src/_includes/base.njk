@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/styles.css" />
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -58,6 +59,7 @@
       <a href="#portfolio">Portfolio</a>
       <a href="#projects">Track Record</a>
       <a href="#upcoming">In the Pipeline</a>
+      <a href="#footprint">Our Footprint</a>
       <a href="#press">In the News</a>
       <a href="#contact">Contact</a>
       <a href="#contact" class="btn js-inquire">Inquire</a>
@@ -135,6 +137,8 @@
 </div>
 
 <script type="module" src="assets/app.js"></script>
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script type="module" src="assets/map.js"></script>
 {% if site.analyticsToken %}<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.analyticsToken }}"}'></script>{% endif %}
 </body>
 </html>

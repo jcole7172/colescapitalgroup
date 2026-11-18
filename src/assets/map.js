@@ -10,7 +10,7 @@ if (mapEl && window.L) {
     { name: 'Halfmoon, NY', lat: 42.90257943632355, lng: -73.77317565777984, cat: 'multi', note: '1917 Route 9 — Precision Automotive Calibrations, completed earlier this year.' },
     { name: 'Waterford, NY', lat: 42.83556572977491, lng: -73.67314899050866, cat: 'land', note: '570 Hudson River Road — land opportunity, available for lease, sale, or build-to-suit.' },
     { name: 'Colonie, NY', lat: 42.71373047474535, lng: -73.82781149621879, cat: 'pipeline', note: "10,000 sq. ft. new build for Honest Johnny's and Precision Automotive Calibrations — 1529 Central Avenue, next to the existing Cole's Collision. In the pipeline." },
-    { name: 'East Glenville, NY', lat: 42.8780, lng: -73.9700, cat: 'completed', note: 'Duplex residential renovation — completed 2024.' },
+    { name: 'East Glenville, NY', lat: 42.86839998538814, lng: -73.90681556405823, cat: 'completed', note: 'Duplex residential renovation — completed 2024.' },
     { name: 'Kinderhook, NY', lat: 42.377428515874085, lng: -73.69118436998142, cat: 'pipeline', note: 'New building replacing the current Cole\'s Collision location — 2532 Route 9H. In the pipeline.' },
     { name: 'Halfmoon, NY', lat: 42.85518420176062, lng: -73.75713111006306, cat: 'pipeline', note: "16,000 sq. ft. flex warehouse for lease — 1615 Route 9, across from the existing Cole's Collision. In the pipeline." },
     { name: 'Halfmoon, NY', lat: 42.893713494069054, lng: -73.7712579247414, cat: 'pipeline', note: '72-acre industrial park — 1867 Route 9. Large-scale development, in the pipeline.' },

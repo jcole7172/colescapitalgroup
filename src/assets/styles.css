@@ -132,6 +132,8 @@
   .map-marker-red span{background:var(--red)}
   @keyframes pin-flash{0%,100%{box-shadow:0 0 0 1px var(--line)}50%{box-shadow:0 0 0 5px rgba(255,255,255,.85)}}
   .map-marker-developed span{animation:pin-flash 1.8s ease-in-out infinite}
+  @keyframes cluster-flash{0%,100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}50%{box-shadow:0 0 0 6px rgba(255,255,255,.85)}}
+  .marker-cluster-developed{animation:cluster-flash 1.8s ease-in-out infinite}
   .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--ink2);color:var(--bone);border:1px solid var(--line);border-radius:0}
   .leaflet-popup-content{font-family:"Archivo";font-size:13.5px;margin:12px 14px}
   .leaflet-popup-content strong{color:var(--brass-soft);font-size:15px}

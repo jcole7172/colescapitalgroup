@@ -40,6 +40,19 @@ if (mapEl && window.L) {
     maxClusterRadius: 40,
     spiderfyOnMaxZoom: true,
     disableClusteringAtZoom: 15,
+    iconCreateFunction: function (cluster) {
+      const children = cluster.getAllChildMarkers();
+      const count = children.length;
+      const hasDeveloped = children.some((m) => m.options.developed);
+      let sizeClass = 'marker-cluster-small';
+      if (count >= 100) sizeClass = 'marker-cluster-large';
+      else if (count >= 10) sizeClass = 'marker-cluster-medium';
+      return new L.DivIcon({
+        html: '<div><span>' + count + '</span></div>',
+        className: 'marker-cluster ' + sizeClass + (hasDeveloped ? ' marker-cluster-developed' : ''),
+        iconSize: new L.Point(40, 40),
+      });
+    },
   });
 
   locations.forEach((loc) => {
@@ -50,7 +63,7 @@ if (mapEl && window.L) {
       iconSize: [18, 18],
       iconAnchor: [9, 9],
     });
-    L.marker([loc.lat, loc.lng], { icon, alt: loc.name })
+    L.marker([loc.lat, loc.lng], { icon, alt: loc.name, developed: !!loc.developed })
       .bindPopup(`<strong>${loc.name}</strong><br>${loc.note}`)
       .addTo(clusters);
   });

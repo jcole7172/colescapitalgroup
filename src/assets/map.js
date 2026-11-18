@@ -2,22 +2,24 @@
 const mapEl = document.getElementById('footprint-map');
 if (mapEl && window.L) {
   const locations = [
-    { name: 'Queensbury, NY', lat: 43.3523, lng: -73.6865, cat: 'pipeline', note: 'Commercial metal building — in the pipeline.' },
-    { name: 'Saratoga Springs, NY', lat: 43.0831, lng: -73.7846, cat: 'pipeline', note: 'Chalet development — in the pipeline.' },
-    { name: 'Malta, NY', lat: 43.0092, lng: -73.7904, cat: 'pipeline', note: 'Flex warehouse development — in the pipeline.' },
-    { name: 'Ballston Spa, NY', lat: 43.0001, lng: -73.8512, cat: 'pipeline', note: 'Metal building development — in the pipeline.' },
-    { name: 'Halfmoon, NY', lat: 42.8700, lng: -73.7010, cat: 'multi', note: 'Multiple completed and in-progress projects.' },
+    { name: 'Queensbury, NY', lat: 43.3150, lng: -73.6850, cat: 'pipeline', note: "New Cole's Collision location — 919 Route 9. In the pipeline." },
+    { name: 'Saratoga Springs, NY', lat: 43.0745, lng: -73.7765, cat: 'pipeline', note: 'Chalet development — 25 Hudson Avenue. In the pipeline.' },
+    { name: 'Malta, NY', lat: 43.0150, lng: -73.7950, cat: 'pipeline', note: '40,000 sq. ft. flex warehouse — 2377 Route 9. In the pipeline.' },
+    { name: 'Ballston Spa, NY', lat: 43.0035, lng: -73.8360, cat: 'pipeline', note: "New Cole's Collision location — 2110 Doubleday Avenue. In the pipeline." },
+    { name: 'Halfmoon, NY', lat: 42.8700, lng: -73.7010, cat: 'multi', note: "1917 Route 9 — two buildings completed earlier this year, home of Honest Johnny's Mechanical and Precision Automotive Calibrations." },
     { name: 'Waterford, NY', lat: 42.7850, lng: -73.6900, cat: 'land', note: 'Land opportunities — available for lease, sale, or build-to-suit.' },
-    { name: 'Colonie, NY', lat: 42.7284, lng: -73.8282, cat: 'pipeline', note: 'Metal building development — in the pipeline.' },
+    { name: 'Colonie, NY', lat: 42.7268, lng: -73.8075, cat: 'pipeline', note: "10,000 sq. ft. new build for Honest Johnny's and Precision Automotive Calibrations — 1529 Central Avenue, next to the existing Cole's Collision. In the pipeline." },
     { name: 'East Glenville, NY', lat: 42.8780, lng: -73.9700, cat: 'completed', note: 'Duplex residential renovation — completed 2024.' },
-    { name: 'Kinderhook, NY', lat: 42.3987, lng: -73.6996, cat: 'pipeline', note: 'Metal building development — in the pipeline.' },
+    { name: 'Kinderhook, NY', lat: 42.4053, lng: -73.6947, cat: 'pipeline', note: 'New building replacing the current Cole\'s Collision location — 2532 Route 9H. In the pipeline.' },
+    { name: 'Halfmoon, NY', lat: 42.8650, lng: -73.6990, cat: 'pipeline', note: "16,000 sq. ft. flex warehouse for lease — 1615 Route 9, across from the existing Cole's Collision. In the pipeline." },
+    { name: 'Halfmoon, NY', lat: 42.8600, lng: -73.6960, cat: 'pipeline', note: '72-acre industrial park — 1867 Route 9. Large-scale development, in the pipeline.' },
     { name: 'Wilton, NY', lat: 43.1080, lng: -73.7780, cat: 'collision', note: "Cole's Collision — 601 Maple Avenue, Saratoga Springs, NY 12866. Current location, under management." },
-    { name: 'Ballston Spa, NY', lat: 43.0020, lng: -73.8380, cat: 'collision', note: "Cole's Collision — 2026 Doubleday Avenue, Ballston Spa, NY 12020. Current location; relocating down the road, and this site will become a Honest Johnny's." },
+    { name: 'Ballston Spa, NY', lat: 43.0020, lng: -73.8380, cat: 'collision', note: "Cole's Collision — 2026 Doubleday Avenue, Ballston Spa, NY 12020. Current location; will become a Honest Johnny's once the new Collision building at 2110 Doubleday Avenue is complete." },
     { name: 'Clifton Park, NY', lat: 42.8580, lng: -73.7300, cat: 'collision', note: "Cole's Collision — 1624 Halfmoon Parkway, Clifton Park, NY 12065. Current location, under management." },
     { name: 'Colonie, NY', lat: 42.7265, lng: -73.8080, cat: 'collision', note: "Cole's Collision — 1517 Central Avenue, Colonie, NY 12205. Current location, under management." },
     { name: 'North Greenbush, NY', lat: 42.6950, lng: -73.6550, cat: 'collision', note: "Cole's Collision — 97 North Greenbush Road, Troy, NY 12180. Current location, under management." },
     { name: 'Nassau, NY', lat: 42.5230, lng: -73.6050, cat: 'collision', note: "Cole's Collision — 3592 US Highway 20, Nassau, NY 12123. Current location, under management." },
-    { name: 'Kinderhook, NY', lat: 42.4050, lng: -73.6950, cat: 'collision', note: "Cole's Collision — 2532 Route 9H, Kinderhook, NY 12106. Current location; on-site building upgrade planned." },
+    { name: 'Kinderhook, NY', lat: 42.4050, lng: -73.6950, cat: 'collision', note: "Cole's Collision — 2532 Route 9H, Kinderhook, NY 12106. Current location; being replaced on-site by a new building." },
   ];
 
   const map = L.map(mapEl, { scrollWheelZoom: false });

@@ -1,5 +1,5 @@
 ---
 value: "6"
 label: Years in Business
-order: 6
+order: 4
 ---

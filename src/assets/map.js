@@ -16,7 +16,7 @@ if (mapEl && window.L) {
     { name: 'Halfmoon, NY', lat: 42.8600, lng: -73.6960, cat: 'pipeline', note: '72-acre industrial park — 1867 Route 9. Large-scale development, in the pipeline.' },
     { name: 'Wilton, NY', lat: 43.1163484225072, lng: -73.77081451237201, cat: 'collision', note: "Cole's Collision — 601 Maple Avenue, Saratoga Springs, NY 12866. Current location, under management." },
     { name: 'Ballston Spa, NY', lat: 43.013346472195245, lng: -73.84645038252505, cat: 'collision', note: "Cole's Collision — 2026 Doubleday Avenue, Ballston Spa, NY 12020. Current location; will become a Honest Johnny's once the new Collision building at 2110 Doubleday Avenue is complete." },
-    { name: 'Clifton Park, NY', lat: 42.8580, lng: -73.7300, cat: 'collision', note: "Cole's Collision — 1624 Halfmoon Parkway, Clifton Park, NY 12065. Current location, under management." },
+    { name: 'Clifton Park, NY', lat: 42.854966324889084, lng: -73.75938806437404, cat: 'collision', note: "Cole's Collision — 1624 Halfmoon Parkway, Clifton Park, NY 12065. Current location, under management." },
     { name: 'Colonie, NY', lat: 42.7265, lng: -73.8080, cat: 'collision', note: "Cole's Collision — 1517 Central Avenue, Colonie, NY 12205. Current location, under management." },
     { name: 'North Greenbush, NY', lat: 42.6950, lng: -73.6550, cat: 'collision', note: "Cole's Collision — 97 North Greenbush Road, Troy, NY 12180. Current location, under management." },
     { name: 'Nassau, NY', lat: 42.5230, lng: -73.6050, cat: 'collision', note: "Cole's Collision — 3592 US Highway 20, Nassau, NY 12123. Current location, under management." },

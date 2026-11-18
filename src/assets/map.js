@@ -55,7 +55,7 @@ if (mapEl && window.L) {
     },
   });
 
-  locations.forEach((loc) => {
+  function buildMarker(loc) {
     const className = 'map-marker map-marker-' + loc.cat + (loc.developed ? ' map-marker-developed' : '');
     const icon = L.divIcon({
       className,
@@ -63,11 +63,44 @@ if (mapEl && window.L) {
       iconSize: [18, 18],
       iconAnchor: [9, 9],
     });
-    L.marker([loc.lat, loc.lng], { icon, alt: loc.name, developed: !!loc.developed })
-      .bindPopup(`<strong>${loc.name}</strong><br>${loc.note}`)
-      .addTo(clusters);
-  });
+    return L.marker([loc.lat, loc.lng], { icon, alt: loc.name, developed: !!loc.developed })
+      .bindPopup(`<strong>${loc.name}</strong><br>${loc.note}`);
+  }
+
+  function renderMarkers(filterCat) {
+    clusters.clearLayers();
+    const filtered = filterCat ? locations.filter((loc) => loc.cat === filterCat) : locations;
+    filtered.forEach((loc) => clusters.addLayer(buildMarker(loc)));
+    map.fitBounds(L.latLngBounds(filtered.map((loc) => [loc.lat, loc.lng])), { padding: [30, 30] });
+  }
 
   map.addLayer(clusters);
-  map.fitBounds(L.latLngBounds(locations.map((loc) => [loc.lat, loc.lng])), { padding: [30, 30] });
+  renderMarkers(null);
+
+  const counts = {};
+  locations.forEach((loc) => { counts[loc.cat] = (counts[loc.cat] || 0) + 1; });
+  const legendItems = document.querySelectorAll('.map-legend [data-cat]');
+  legendItems.forEach((el) => {
+    const cat = el.getAttribute('data-cat');
+    const label = el.querySelector('.legend-label');
+    if (label && counts[cat]) label.textContent += ' — ' + counts[cat];
+
+    const toggle = () => {
+      const isActive = el.classList.contains('active');
+      legendItems.forEach((other) => other.classList.remove('active'));
+      if (isActive) {
+        renderMarkers(null);
+      } else {
+        el.classList.add('active');
+        renderMarkers(cat);
+      }
+    };
+    el.addEventListener('click', toggle);
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
 }

@@ -121,6 +121,32 @@
   a.up:hover{background:rgba(255,255,255,.03)}
   a.up .gallery-hint{margin-top:4px}
 
+  /* pipeline project timeline (gantt chart) */
+  .pipeline-timeline{margin-top:56px;padding-top:40px;border-top:1px solid var(--line)}
+  .pipeline-timeline .sec-label{margin-bottom:20px}
+  .tl-axis{position:relative;height:18px;font-size:11.5px;color:var(--muted);letter-spacing:.04em;margin-bottom:10px}
+  .tl-axis span{position:absolute;transform:translateX(-50%);white-space:nowrap;text-transform:uppercase}
+  .tl-row{margin-bottom:20px}
+  .tl-name{font-size:15.5px;font-weight:500;color:var(--bone)}
+  .tl-note{font-size:12.5px;color:var(--muted);margin-top:3px}
+  .tl-track{position:relative;height:14px;margin-top:9px;background:var(--ink);border:1px solid var(--line);border-radius:3px}
+  .tl-bar{position:absolute;top:0;height:14px;border-radius:2px}
+  .tl-bar.tl-approval{background:var(--muted)}
+  .tl-bar.tl-build{background:var(--brass)}
+  .tl-bar.tl-tentative{border:1px dashed var(--brass);box-sizing:border-box;background-image:repeating-linear-gradient(45deg,rgba(198,134,60,.28) 0 3px,transparent 3px 7px)}
+  .tl-today-line{position:absolute;top:-4px;bottom:-4px;border-left:2px solid var(--rust)}
+  .tl-legend{display:flex;flex-wrap:wrap;gap:18px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:26px}
+  .tl-sw{display:inline-block;width:14px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+  .tl-sw.tl-approval{background:var(--muted)}
+  .tl-sw.tl-build{background:var(--brass)}
+  .tl-sw.tl-tentative{border:1px dashed var(--brass);box-sizing:border-box;background-image:repeating-linear-gradient(45deg,rgba(198,134,60,.28) 0 3px,transparent 3px 7px)}
+  .tl-today-sw{display:inline-block;width:2px;height:12px;background:var(--rust);margin-right:6px;vertical-align:-1px}
+  @media(min-width:640px){
+    .tl-row{display:grid;grid-template-columns:200px 1fr;gap:16px;align-items:center}
+    .tl-row .tl-track{margin-top:0}
+    .tl-axis{margin-left:216px}
+  }
+
   /* footprint map */
   .footprint .lede{color:var(--muted);font-size:15px;max-width:60ch;margin-top:10px}
   .map-wrap{margin-top:48px;border:1px solid var(--line);background:var(--ink2);padding:16px}

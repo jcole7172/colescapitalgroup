@@ -20,7 +20,7 @@ if (tlAxisEl && tlRowsEl) {
       phases: [{ type: "tentative", start: "2027-01", end: "2027-12" }] },
     { name: "Cole's Collision Queensbury", note: "2027 approvals",
       phases: [{ type: "tentative", start: "2027-01", end: "2027-12" }] },
-    { name: "Cole's Amsterdam", note: "2027 approvals",
+    { name: "Cole's Amsterdam", note: "0 Maple Avenue (Route 30) — 2027 approvals",
       phases: [{ type: "tentative", start: "2027-01", end: "2027-12" }] },
     { name: "Cole's Ballston Spa", note: "2027 approvals",
       phases: [{ type: "tentative", start: "2027-01", end: "2027-12" }] },

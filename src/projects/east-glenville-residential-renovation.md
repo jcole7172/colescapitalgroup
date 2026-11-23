@@ -2,7 +2,7 @@
 title: East Glenville Residential Renovation
 year: 2024
 category: Residential
-note: 3,800 sq. ft. duplex renovation — kitchens, baths, and living spaces.
+note: 3,800 sq. ft. duplex renovation — kitchens, baths, and living spaces. Sold.
 gallery:
   - assets/uploads/201-maple/exterior-aerial.jpg
   - assets/uploads/201-maple/exterior-front.jpg

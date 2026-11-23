@@ -4,6 +4,7 @@ if (mapEl && window.L) {
   const locations = [
     { name: 'Queensbury, NY', lat: 43.33670750308701, lng: -73.67973879258093, cat: 'pipeline', note: "New Cole's Collision location — 919 Route 9. In the pipeline." },
     { name: 'Queensbury, NY', lat: 43.356533716651164, lng: -73.70007708051065, cat: 'pipeline', note: '1300 Route 9 — new business, coming soon.' },
+    { name: 'Amsterdam, NY', lat: 42.9771771, lng: -74.1879068, cat: 'pipeline', note: "New Cole's Collision location — 0 Maple Avenue (Route 30). In the pipeline." },
     { name: 'Saratoga Springs, NY', lat: 43.10263923258961, lng: -73.77076739592839, cat: 'pipeline', note: 'Chalet development — 25 Hudson Avenue. In the pipeline.' },
     { name: 'Malta, NY', lat: 42.95870483989021, lng: -73.78986036636094, cat: 'pipeline', note: '40,000 sq. ft. flex warehouse — 2377 Route 9. In the pipeline.' },
     { name: 'Ballston Spa, NY', lat: 43.01720901853004, lng: -73.8434839748752, cat: 'pipeline', note: "New Cole's Collision location — 2110 Doubleday Avenue. In the pipeline." },

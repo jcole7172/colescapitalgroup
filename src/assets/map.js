@@ -2,12 +2,12 @@
 const mapEl = document.getElementById('footprint-map');
 if (mapEl && window.L) {
   const locations = [
-    { name: 'Queensbury, NY', lat: 43.33670750308701, lng: -73.67973879258093, cat: 'pipeline', note: "New Cole's Collision location — 919 Route 9. In the pipeline." },
+    { name: 'Queensbury, NY', lat: 43.33670750308701, lng: -73.67973879258093, cat: 'pipeline', note: "New Cole's Collision location — in the pipeline." },
     { name: 'Queensbury, NY', lat: 43.356533716651164, lng: -73.70007708051065, cat: 'pipeline', note: '1300 Route 9 — new business, coming soon.' },
-    { name: 'Amsterdam, NY', lat: 42.9771771, lng: -74.1879068, cat: 'pipeline', note: "12,000 sq. ft. new Cole's Collision location — 0 Maple Avenue (Route 30). In the pipeline." },
+    { name: 'Amsterdam, NY', lat: 42.9771771, lng: -74.1879068, cat: 'pipeline', note: "12,000 sq. ft. new Cole's Collision location — in the pipeline." },
     { name: 'Saratoga Springs, NY', lat: 43.10263923258961, lng: -73.77076739592839, cat: 'pipeline', note: 'Chalet development — 25 Hudson Avenue. In the pipeline.' },
     { name: 'Malta, NY', lat: 42.95870483989021, lng: -73.78986036636094, cat: 'pipeline', note: '40,000 sq. ft. flex warehouse — 2377 Route 9. In the pipeline.' },
-    { name: 'Ballston Spa, NY', lat: 43.01720901853004, lng: -73.8434839748752, cat: 'pipeline', note: "New Cole's Collision location — 2110 Doubleday Avenue. In the pipeline." },
+    { name: 'Ballston Spa, NY', lat: 43.01720901853004, lng: -73.8434839748752, cat: 'pipeline', note: "New Cole's Collision location — in the pipeline." },
     { name: 'Halfmoon, NY', lat: 42.90292120039764, lng: -73.77335014573424, cat: 'red', developed: true, note: "1917 Route 9 — Honest Johnny's Mechanical. Completed." },
     { name: 'Halfmoon, NY', lat: 42.90257943632355, lng: -73.77317565777984, cat: 'red', developed: true, note: '1917 Route 9 — Precision Automotive Calibrations. Completed.' },
     { name: 'Waterford, NY', lat: 42.83556572977491, lng: -73.67314899050866, cat: 'land', note: '570 Hudson River Road — land opportunity, available for lease, sale, or build-to-suit.' },
